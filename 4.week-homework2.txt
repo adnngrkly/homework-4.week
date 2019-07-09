@@ -1,0 +1,28 @@
+##4.week-homework2
+
+value=input("Please enter anyone text\t:")
+value1=value.replace(" ","")
+
+file1="QWERTYUIOPASDFGHJKLZXCVBNM"
+file2="qwertyuiopasdfghjklzxcvbnm"
+file3="0123456789"
+
+uppercase=0
+lowercase=0
+number=0
+differentcharacter=0
+
+for i in value1:
+    if i in file1:
+        uppercase+=1
+    elif i in file2:
+        lowercase+=1
+    elif i in file3:
+        number+=1
+    else:
+        differentcharacter+=1
+
+uppercasecount=print(uppercase)
+lowercaseacount=print(lowercase)
+numberacount=print(number)
+differentcharactercount=print(differentcharacter)

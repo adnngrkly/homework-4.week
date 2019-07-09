@@ -1,0 +1,6 @@
+##4.week-homework1
+
+value=input("Please enter anyone text\t:")
+
+changevalue=value.upper()
+print(changevalue)

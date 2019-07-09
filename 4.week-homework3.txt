@@ -1,0 +1,24 @@
+##4.week-homework3
+
+value=input("Please enter anyone text\t:")
+value1=value.replace(" ","")
+
+file1="0123456789"
+
+
+number=""
+
+
+for i in value1:
+    if i in file1:
+        number+=i
+
+    else:
+        pass
+
+numbertotal=0
+for i in number:
+    i=int(i)
+    numbertotal+=i
+
+print(numbertotal)

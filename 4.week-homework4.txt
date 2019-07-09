@@ -1,0 +1,12 @@
+##4.week homework4
+with open("soundfootballplayers.txt","w") as file1:
+    file1.close()
+soundcase="qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM"
+with open("football_players.txt","r") as file:
+    for i in file:
+        value=i[0]
+        if value in soundcase:
+            with open("soundfootballplayers.txt","a+") as file1:
+                file1.write(i)
+        else:
+            pass

@@ -1,0 +1,22 @@
+##4.week-homework5
+
+with open("football_players.txt", "r",) as file:
+    value=file.read()
+    valuechange=value.replace("ç", "c")
+    valuechange1=valuechange.replace("ý", "i")
+    valuechange2=valuechange1.replace("æ","ae")
+    valuechange3=valuechange2.replace("ão","o")
+    valuechange4=valuechange3.replace("Ý","I")
+    valuechange5=valuechange4.replace("þ","s")
+    valuechange6=valuechange5.replace("Ö","O")
+    valuechange7=valuechange6.replace("ö","o")
+    valuechange8=valuechange7.replace("Þ","S")
+    valuechange9=valuechange8.replace("Š","S")
+    valuechange10=valuechange9.replace("ü","u")
+    valuechange11=valuechange10.replace("ð","g")
+    valuechange12=valuechange11.replace("Ç","c")
+    valuechange13=valuechange12.replace("š","s")
+    valuechange14=valuechange13.replace("é","e")
+
+with open("replacefootball.txt","w") as file1:
+    file1.write(valuechange14)
